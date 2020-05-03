@@ -1,6 +1,44 @@
 {"Types":
 	[
-	 {"name": "CPF", "rules": "verifica_cpf", "result_rules": 1, "min_rules":0.9},
-	 {"name": "CNPJ", "rules": "verifica_cnpj","result_rules": 1,"min_rules":0.9}
+	 {
+		"name":"CPF_CNPJ",
+		"rules":"verifica_cpf_cnpj",
+		"result_rules": 1,
+		"min_rules":0.9,
+		"wrangler":"trata_cpf_cnpj",
+		"type_wrangler":"string"
+	},
+	{
+		"name":"Email",
+		"rules":"verifica_email",
+		"result_rules": 1,
+		"min_rules":0.5,
+		"wrangler":"trata_email",
+		"type_wrangler":"string"
+	},
+	{
+		"name":"Telefone",
+		"rules":"verifica_telefone_br",
+		"result_rules": 1,
+		"min_rules":0.5,
+		"wrangler":"trata_telefone",
+		"type_wrangler":"string"
+	},
+	{
+		"name":"CEP",
+		"rules":"verifica_cep_br",
+		"result_rules": 1,
+		"min_rules":0.5,
+		"wrangler":"trata_cep",
+		"type_wrangler":"string"
+	},
+	{
+		"name":"Data",
+		"rules":"verifica_data",
+		"result_rules": 1,
+		"min_rules":0.8,
+		"wrangler":None,
+		"type_wrangler":"datetime"
+	}
 	]
 }
