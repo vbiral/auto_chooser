@@ -1,0 +1,6 @@
+{"Types":
+	[
+	 {"name": "CPF", "rules": "verifica_cpf", "result_rules": 1, "min_rules":0.9},
+	 {"name": "CNPJ", "rules": "verifica_cnpj","result_rules": 1,"min_rules":0.9}
+	]
+}
